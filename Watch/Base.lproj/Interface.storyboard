@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Volume-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Volume" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
+                    <items>
+                        <picker width="120" height="120" alignment="center" style="sequence" id="16K-Yy-Rcw">
+                            <connections>
+                                <action selector="pickerSelectedItemChangedWithValue:" destination="AgC-eL-Hgc" id="q7e-q7-EHJ"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="itemPicker" destination="16K-Yy-Rcw" id="NZ8-fY-zD1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="37"/>
+        </scene>
+    </scenes>
+</document>
