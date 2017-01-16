@@ -91,6 +91,10 @@ class InterfaceController: WKInterfaceController {
   // MARK: - Action
   
   @IBAction func pickerSelectedItemChanged(value: Int) {
+    if isMuted {
+      isMuted = false
+    }
+    
     pickerValue = value
   }
 

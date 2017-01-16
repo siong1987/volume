@@ -29,6 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       session = WCSession.default()
     }
     
+    let pageControl = UIPageControl.appearance()
+    pageControl.pageIndicatorTintColor = .lightGray
+    pageControl.currentPageIndicatorTintColor = .black
+    pageControl.backgroundColor = .white
+    
     return true
   }
   

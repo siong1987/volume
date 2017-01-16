@@ -1,0 +1,8 @@
+{
+  "supported complication families" : {
+    "0" : "B334034D-1AE7-49D6-B0D9-AF26AAA30675.json",
+    "2" : "B58D4AAF-7D83-4411-8ECC-28FEBA6BB063.json",
+    "4" : "62D0DBC9-8E52-4B39-BF39-E1110195FEAE.json"
+  },
+  "client ID" : "com.siong.Volume.watchkitapp.watchkitextension"
+}

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FCL-MP-ExS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Bh9-eW-XTf">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="FCL-MP-ExS" customClass="ViewController" customModule="Volume" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNK-9g-F7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RSS-st-377">
+            <objects>
+                <viewController storyboardIdentifier="StepOneViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="buS-mK-E50" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SAJ-uz-tok"/>
+                        <viewControllerLayoutGuide type="bottom" id="fnc-bV-JKE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wfx-Ei-rtT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="G6z-ZV-n5R">
+                                <rect key="frame" x="137" y="60" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="i3x-SR-dRq"/>
+                                    <constraint firstAttribute="height" constant="100" id="rih-pP-Bs2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kw-EW-PMj">
+                                <rect key="frame" x="16" y="233" width="343" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3rm-LS-e3v"/>
+                                </constraints>
+                                <string key="text">Thank you for downloading the Volume app 🙏🏻
+
+Volume lets you control your iPhone volume easily from your Apple Watch.
+
+Swipe left to learn how to use Volume 😁</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3kw-EW-PMj" firstAttribute="leading" secondItem="Wfx-Ei-rtT" secondAttribute="leadingMargin" id="E92-60-1LL"/>
+                            <constraint firstItem="3kw-EW-PMj" firstAttribute="centerY" secondItem="Wfx-Ei-rtT" secondAttribute="centerY" id="EkQ-Vw-y6d"/>
+                            <constraint firstItem="G6z-ZV-n5R" firstAttribute="top" secondItem="SAJ-uz-tok" secondAttribute="bottom" constant="40" id="R03-hs-4gF"/>
+                            <constraint firstItem="G6z-ZV-n5R" firstAttribute="centerX" secondItem="Wfx-Ei-rtT" secondAttribute="centerX" id="Xda-Xg-i0t"/>
+                            <constraint firstItem="3kw-EW-PMj" firstAttribute="centerX" secondItem="Wfx-Ei-rtT" secondAttribute="centerX" id="dqR-dg-EaN"/>
+                            <constraint firstItem="3kw-EW-PMj" firstAttribute="trailing" secondItem="Wfx-Ei-rtT" secondAttribute="trailingMargin" id="pvR-zw-CmE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXA-hu-kIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="932.38380809595208"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yau-Ts-6IB">
+            <objects>
+                <viewController storyboardIdentifier="StepTwoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="syU-vy-r5h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8wK-df-EAT"/>
+                        <viewControllerLayoutGuide type="bottom" id="gNa-Dm-sTi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H83-n6-yNF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenshot1" translatesAutoresizingMaskIntoConstraints="NO" id="NR4-Qo-yEo">
+                                <rect key="frame" x="71" y="20" width="232" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="A4z-Is-7YA"/>
+                                    <constraint firstAttribute="width" constant="232" id="IzR-je-3BA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deep press your Apple Watch screen to bring up the above customization screen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUj-2d-DMW">
+                                <rect key="frame" x="16" y="440" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="nIZ-yi-356"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qUj-2d-DMW" firstAttribute="top" secondItem="NR4-Qo-yEo" secondAttribute="bottom" constant="20" id="J5i-Pu-vY9"/>
+                            <constraint firstItem="NR4-Qo-yEo" firstAttribute="centerX" secondItem="H83-n6-yNF" secondAttribute="centerX" id="TGR-9j-h2E"/>
+                            <constraint firstItem="qUj-2d-DMW" firstAttribute="leading" secondItem="H83-n6-yNF" secondAttribute="leadingMargin" id="h7E-Gd-0d5"/>
+                            <constraint firstItem="qUj-2d-DMW" firstAttribute="trailing" secondItem="H83-n6-yNF" secondAttribute="trailingMargin" id="hjY-wj-8Ev"/>
+                            <constraint firstItem="NR4-Qo-yEo" firstAttribute="top" secondItem="8wK-df-EAT" secondAttribute="bottom" id="rAu-TC-dw9"/>
+                            <constraint firstItem="qUj-2d-DMW" firstAttribute="centerX" secondItem="H83-n6-yNF" secondAttribute="centerX" id="urk-ma-Te0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d57-4X-yxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="931.48425787106453"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wVq-wv-2V5">
+            <objects>
+                <viewController storyboardIdentifier="StepThreeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jDN-e1-bzv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oYD-Qg-HG0"/>
+                        <viewControllerLayoutGuide type="bottom" id="AYx-UY-sky"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wrr-zF-EpY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenshot2" translatesAutoresizingMaskIntoConstraints="NO" id="kbs-XP-m0U">
+                                <rect key="frame" x="71" y="20" width="232" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Ptw-us-G1R"/>
+                                    <constraint firstAttribute="width" constant="232" id="i2W-YC-Pis"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the Volume complication using your Digital Crown." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5k-d8-TLv">
+                                <rect key="frame" x="16" y="440" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0QY-BG-lqS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kbs-XP-m0U" firstAttribute="centerX" secondItem="Wrr-zF-EpY" secondAttribute="centerX" id="5bB-ly-sNm"/>
+                            <constraint firstItem="y5k-d8-TLv" firstAttribute="centerX" secondItem="Wrr-zF-EpY" secondAttribute="centerX" id="GNy-kM-hek"/>
+                            <constraint firstItem="kbs-XP-m0U" firstAttribute="centerX" secondItem="Wrr-zF-EpY" secondAttribute="centerX" id="HWs-Js-33S"/>
+                            <constraint firstItem="kbs-XP-m0U" firstAttribute="top" secondItem="oYD-Qg-HG0" secondAttribute="bottom" id="TcQ-me-HcC"/>
+                            <constraint firstItem="y5k-d8-TLv" firstAttribute="leading" secondItem="Wrr-zF-EpY" secondAttribute="leadingMargin" id="Wgk-Yd-oRL"/>
+                            <constraint firstItem="y5k-d8-TLv" firstAttribute="top" secondItem="kbs-XP-m0U" secondAttribute="bottom" constant="20" id="bpA-qE-ifO"/>
+                            <constraint firstItem="y5k-d8-TLv" firstAttribute="trailing" secondItem="Wrr-zF-EpY" secondAttribute="trailingMargin" id="hDg-be-jtI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjS-U2-GoV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1665" y="931"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wnf-7o-wli">
+            <objects>
+                <viewController storyboardIdentifier="StepFourViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="42j-J8-IVF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vlD-q9-FTx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KUp-zv-I7F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ihZ-aJ-aQg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenshot3" translatesAutoresizingMaskIntoConstraints="NO" id="IE9-dF-g5M">
+                                <rect key="frame" x="71" y="20" width="232" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="odW-wj-UHf"/>
+                                    <constraint firstAttribute="height" constant="400" id="wHJ-qG-Zbq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are good to go now.  Try launching the app and start controlling your iPhone volume via your Digital Crown." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP4-o4-ukc">
+                                <rect key="frame" x="16" y="440" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="A0N-mC-dsA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IE9-dF-g5M" firstAttribute="top" secondItem="vlD-q9-FTx" secondAttribute="bottom" id="7tL-bE-A9u"/>
+                            <constraint firstItem="IE9-dF-g5M" firstAttribute="centerX" secondItem="ihZ-aJ-aQg" secondAttribute="centerX" id="MpB-1W-W5R"/>
+                            <constraint firstItem="BP4-o4-ukc" firstAttribute="trailing" secondItem="ihZ-aJ-aQg" secondAttribute="trailingMargin" id="Y1w-wF-Z8S"/>
+                            <constraint firstItem="BP4-o4-ukc" firstAttribute="top" secondItem="IE9-dF-g5M" secondAttribute="bottom" constant="20" id="jdR-JR-kMh"/>
+                            <constraint firstItem="BP4-o4-ukc" firstAttribute="leading" secondItem="ihZ-aJ-aQg" secondAttribute="leadingMargin" id="x81-M2-l7V"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2cD-jE-5a9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448.8000000000002" y="930.58470764617698"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I9t-Mp-6Ow">
+            <objects>
+                <viewController storyboardIdentifier="StepFiveViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tiu-GB-zaK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nee-zF-Q8C"/>
+                        <viewControllerLayoutGuide type="bottom" id="Te3-dC-hxI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jjY-4X-cec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hHm-YC-45B">
+                                <rect key="frame" x="16" y="233" width="343" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="cJT-VH-zVF"/>
+                                </constraints>
+                                <string key="text">Again, thank you for downloading the Volume app 🙏🏻
+
+If you prefer to thank me personally, tweet at me on Twitter - https://twitter.com/siong1987.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hHm-YC-45B" firstAttribute="centerY" secondItem="jjY-4X-cec" secondAttribute="centerY" id="1ae-hS-wey"/>
+                            <constraint firstItem="hHm-YC-45B" firstAttribute="centerX" secondItem="jjY-4X-cec" secondAttribute="centerX" id="H9u-G4-fbu"/>
+                            <constraint firstItem="hHm-YC-45B" firstAttribute="leading" secondItem="jjY-4X-cec" secondAttribute="leadingMargin" id="Vzz-cQ-vi5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hHm-YC-45B" secondAttribute="trailing" id="suZ-ag-h9v"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixf-YM-ZLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3200.8000000000002" y="930.58470764617698"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="80" height="80"/>
+        <image name="screenshot1" width="276" height="475"/>
+        <image name="screenshot2" width="276" height="475"/>
+        <image name="screenshot3" width="276" height="475"/>
+    </resources>
+</document>
