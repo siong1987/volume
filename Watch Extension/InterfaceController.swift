@@ -12,6 +12,7 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
   @IBOutlet var itemPicker: WKInterfacePicker!
+  var pickerValue = 0
   
   var session: WCSession? {
     didSet {
@@ -21,23 +22,27 @@ class InterfaceController: WKInterfaceController {
       }
     }
   }
+  private lazy var debouncedFunction: Debouncer = Debouncer(delay: 0.25, counter: 5) {
+    print("hi")
+    self.setVolume(volume: self.pickerValue)
+  }
 
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
     
     // Configure interface objects here.
-  }
-  
-  override func willActivate() {
-    super.willActivate()
-    
     let pickerItems: [WKPickerItem] = (0...100).map {
       let pickerItem = WKPickerItem()
       pickerItem.contentImage = WKImage(imageName: "picker\($0).png")
       return pickerItem
     }
     itemPicker.setItems(pickerItems)
-
+    itemPicker.setSelectedItemIndex(50)
+  }
+  
+  override func willActivate() {
+    super.willActivate()
+    
     activateSession()
   }
   
@@ -55,20 +60,26 @@ class InterfaceController: WKInterfaceController {
       session = WCSession.default()
     }
   }
+  
+  private func setVolume(volume: Int) {
+    guard let session = session else { return }
+    guard session.isReachable else { return }
+    
+    session.sendMessage(["request": "volume_set", "volume": volume], replyHandler: nil, errorHandler: { (error) -> Void in
+      print(error)
+    })
+  }
 
   // MARK: - Action
   
   @IBAction func pickerSelectedItemChanged(value: Int) {
-    guard let session = session else { return }
-    
-    session.sendMessage(["request": "volume_set", "volume": value], replyHandler: nil, errorHandler: { (error) -> Void in
-      print(error)
-    })
+    pickerValue = value
+    debouncedFunction.call()
   }
 }
 
 extension InterfaceController: WCSessionDelegate {
   func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-    // Do nothing
+    
   }
 }

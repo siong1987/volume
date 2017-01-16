@@ -21,6 +21,7 @@
 		CD32B7041E2AE0AC0085FF1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD32B7031E2AE0AC0085FF1D /* Assets.xcassets */; };
 		CD32B7081E2AE0AC0085FF1D /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CD32B6EC1E2AE0AB0085FF1D /* Watch.app */; };
 		CD32B7131E2AE7620085FF1D /* MPVolumeView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD32B7121E2AE7620085FF1D /* MPVolumeView+Extension.swift */; };
+		CDF920721E2C57010081954D /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF920711E2C57010081954D /* Debouncer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		CD32B7031E2AE0AC0085FF1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD32B7051E2AE0AC0085FF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD32B7121E2AE7620085FF1D /* MPVolumeView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPVolumeView+Extension.swift"; sourceTree = "<group>"; };
+		CDF920711E2C57010081954D /* Debouncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		CD32B6FC1E2AE0AC0085FF1D /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CDF920701E2C56F60081954D /* Support */,
 				CD32B6FD1E2AE0AC0085FF1D /* InterfaceController.swift */,
 				CD32B6FF1E2AE0AC0085FF1D /* ExtensionDelegate.swift */,
 				CD32B7011E2AE0AC0085FF1D /* ComplicationController.swift */,
@@ -166,6 +169,14 @@
 				CD32B7121E2AE7620085FF1D /* MPVolumeView+Extension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CDF920701E2C56F60081954D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CDF920711E2C57010081954D /* Debouncer.swift */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD32B7001E2AE0AC0085FF1D /* ExtensionDelegate.swift in Sources */,
+				CDF920721E2C57010081954D /* Debouncer.swift in Sources */,
 				CD32B6FE1E2AE0AC0085FF1D /* InterfaceController.swift in Sources */,
 				CD32B7021E2AE0AC0085FF1D /* ComplicationController.swift in Sources */,
 			);
@@ -580,6 +592,7 @@
 				CD32B70C1E2AE0AC0085FF1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD32B70F1E2AE0AC0085FF1D /* Build configuration list for PBXNativeTarget "Watch" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +601,7 @@
 				CD32B70A1E2AE0AC0085FF1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
