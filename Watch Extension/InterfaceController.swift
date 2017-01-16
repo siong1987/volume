@@ -12,7 +12,26 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
   @IBOutlet var itemPicker: WKInterfacePicker!
-  var pickerValue = 0
+  @IBOutlet var button: WKInterfaceButton!
+  private var pickerValue = 50 {
+    didSet {
+      debouncedFunction.call()
+    }
+  }
+  private var isMuted: Bool = false {
+    didSet {
+      button.setTitle(isMuted ? "Unmute" : "Mute")
+      
+      if isMuted {
+        storedVolume = pickerValue
+        pickerValue = 0
+      } else {
+        pickerValue = storedVolume
+        storedVolume = 0
+      }
+    }
+  }
+  private var storedVolume = 0
   
   var session: WCSession? {
     didSet {
@@ -23,7 +42,6 @@ class InterfaceController: WKInterfaceController {
     }
   }
   private lazy var debouncedFunction: Debouncer = Debouncer(delay: 0.25, counter: 5) {
-    print("hi")
     self.setVolume(volume: self.pickerValue)
   }
 
@@ -37,7 +55,7 @@ class InterfaceController: WKInterfaceController {
       return pickerItem
     }
     itemPicker.setItems(pickerItems)
-    itemPicker.setSelectedItemIndex(50)
+    itemPicker.setSelectedItemIndex(pickerValue)
   }
   
   override func willActivate() {
@@ -74,7 +92,10 @@ class InterfaceController: WKInterfaceController {
   
   @IBAction func pickerSelectedItemChanged(value: Int) {
     pickerValue = value
-    debouncedFunction.call()
+  }
+
+  @IBAction func muteSpeaker(button: WKInterfaceButton) {
+    isMuted = !isMuted
   }
 }
 

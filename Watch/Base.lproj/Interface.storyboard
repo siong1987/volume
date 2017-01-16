@@ -14,18 +14,24 @@
             <objects>
                 <controller title="Volume" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
                     <items>
-                        <picker width="120" height="120" alignment="center" style="sequence" id="16K-Yy-Rcw">
+                        <picker width="108" height="108" alignment="center" style="sequence" id="16K-Yy-Rcw">
                             <connections>
                                 <action selector="pickerSelectedItemChangedWithValue:" destination="AgC-eL-Hgc" id="q7e-q7-EHJ"/>
                             </connections>
                         </picker>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Mute" id="j28-Db-6K9">
+                            <connections>
+                                <action selector="muteSpeakerWithButton:" destination="AgC-eL-Hgc" id="mcN-gl-1Eu"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="button" destination="j28-Db-6K9" id="n33-Aq-dyL"/>
                         <outlet property="itemPicker" destination="16K-Yy-Rcw" id="NZ8-fY-zD1"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="34" y="37"/>
+            <point key="canvasLocation" x="34" y="31"/>
         </scene>
     </scenes>
 </document>
